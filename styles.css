@@ -132,3 +132,143 @@ body{
     font-weight: 500;
     color: hsl(12, 20%, 44%);
 }
+
+/* ===================== Responsive Styles ===================== */
+
+/* For tablet and smaller screens */
+@media (max-width: 768px) {
+    .container {
+        margin: 3rem 2rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+
+    .placeOrder > h2 {
+        font-size: 24px;
+    }
+
+    .cardOne {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cardImg {
+        height: 20vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .cardImg > img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .cardImg > button {
+        padding: .4rem 1.2rem;
+        font-size: 12px;
+    }
+
+    .cardCont {
+        gap: .3rem;
+    }
+
+    .cardCont > p {
+        font-size: 12px;
+    }
+
+    .cardCont > span {
+        font-size: 13px;
+    }
+
+    .cardCont > h3 {
+        font-size: 14px;
+    }
+
+    .cartCard {
+        padding: 0.8rem;
+    }
+
+    .cartCard > h3 {
+        font-size: 18px;
+    }
+
+    .cartCard > p {
+        font-size: 12px;
+    }
+
+    .yourCartImg {
+        width: 80%;
+        height: auto;
+        margin: 1rem auto;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .container {
+        margin: 2rem;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .placeOrder > h2 {
+        font-size: 20px;
+    }
+
+    .cardOne {
+        gap: 1rem;
+    }
+
+    .cardImg {
+        height: 25vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .cardImg > button {
+        padding: .3rem 1rem;
+        font-size: 11px;
+    }
+
+    .cardCont > p {
+        font-size: 11px;
+    }
+
+    .cardCont > span {
+        font-size: 12px;
+    }
+
+    .cardCont > h3 {
+        font-size: 14px;
+    }
+
+    .cartCard {
+        padding: 0.6rem;
+    }
+
+    .cartCard > h3 {
+        font-size: 16px;
+    }
+
+    .cartCard > p {
+        font-size: 11px;
+    }
+
+    .yourCartImg {
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
+    }
+}
