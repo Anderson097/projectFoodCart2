@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Red Hat Text", sans-serif;
+}
+
+body{
+    background-color: hsl(13, 31%, 94%);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 5rem 6rem;
+    gap: 2rem;
+}
+
+.cards{
+    margin-top: 2rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.placeOrder > h2{
+    text-transform: capitalize;
+    color: hsl(14, 65%, 9%);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.cardOne{
+    display: flex;
+    flex-direction: column;
+    /* height: 30vh;
+    width: 20vw; */
+}
+
+.cardImg{
+    display: flex;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    justify-content: center;
+    /* height: 30vh;
+    width: 20vw; */
+    position: relative;
+}
+
+.cardImg > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardImg > button{
+    position: absolute;
+    bottom: -10px;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    border: 1px solid hsl(12, 20%, 44%);
+    border-radius: 20px;
+    color: hsl(14, 65%, 9%);
+    padding: .3rem 1.5rem;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: hsl(14, 86%, 42%);
+    color: #fff;
+}
+
+.cardCont{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: .5rem;
+}
+
+.cardCont > p{
+    /* margin-block: .5rem; */
+    color: hsl(12, 20%, 44%);
+    font-size: 13px;
+}
+
+.cardCont > span{
+    color: hsl(14, 86%, 42%);
+    font-weight: 600;
+}
+
+.cardCont > h3{
+    color: hsl(14, 65%, 9%);
+    font-size: 16px;
+}
+
+.cartCard{
+    background-color: hsl(20, 50%, 98%);
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.cartCard > h3{
+    text-transform: capitalize;
+    color: hsl(14, 86%, 42%);
+    font-weight: 700;
+    /* margin: 1rem; */
+}
+
+.yourCartImg{
+    height: 20vh;
+    width: 20vw;
+    margin: auto;
+}
+
+.yourCartImg > Img{
+    height: 100%;
+    width: 100%;
+}
+
+.cartCard > p{
+    margin: auto;
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(12, 20%, 44%);
+}
